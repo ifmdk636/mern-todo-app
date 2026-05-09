@@ -27,7 +27,7 @@ This project demonstrates the implementation of a RESTful API and complete CRUD 
 
 ### Frontend
 - React.js
-- CSS / Tailwind CSS / Bootstrap *(adjust based on your project)*
+- CSS and Tailwind CSS *(adjust based on your project)*
 - Axios
 
 ### Backend
@@ -73,12 +73,11 @@ npm install
 
 Create a .env file inside the server folder and add:
 
-PORT=5000
+PORT=1000
 MONGO_URI=your_mongodb_connection_string
 
 Example:
-
-MONGO_URI=mongodb://127.0.0.1:27017/mern-todo-app
+MONGO_URI=mongodb://127.0.0.1:27017/mern-todo-app -> DB Connect = it's just e.g.
 ▶️ Running the Application
 Start Backend Server
 cd server
@@ -86,7 +85,7 @@ npm run dev
 
 Backend runs on:
 
-http://localhost:5000
+http://localhost:1000
 Start Frontend
 
 Open another terminal:
@@ -95,7 +94,7 @@ cd client
 npm start
 
 Frontend runs on:
-http://localhost:3000
+http://localhost:5173
 
 Add your project screenshots here.
 
