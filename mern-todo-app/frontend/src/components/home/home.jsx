@@ -1,18 +1,19 @@
 import Navbar from "../navbar/navbar.jsx";
 import Footer from "../footer/footer.jsx";
 import "./home.css";
-import imagetodo from "../../../public/imagetodo-removebg-preview.png";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
+
   const routeChange = () => {
-    let path = "./login";
-    navigate(path);
+    navigate("/login");
   };
+
   return (
     <>
       <Navbar />
+
       <div className="d-flex home justify-content-center align-items-center">
         <div className="content">
           <div className="title">
@@ -20,7 +21,11 @@ const Home = () => {
           </div>
 
           <div className="img">
-            <img className="imagetodo" src={imagetodo} alt="todo" />
+            <img
+              className="imagetodo"
+              src="/imagetodo-removebg-preview.png"
+              alt="todo"
+            />
           </div>
         </div>
 
@@ -30,6 +35,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+
       <Footer />
     </>
   );
