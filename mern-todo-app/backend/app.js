@@ -19,6 +19,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Endpoint
+app.get("/", (req, res) => {
+  res.send("Backend MERN Todo App Berhasil Berjalan di Vercel!");
+});
 app.post("/register", auth);
 app.post("/login", auth);
 app.post("/addlist", list);
@@ -30,4 +33,4 @@ app.listen(1000, () => {
   console.log("http://localhost:1000");
 });
 
-conn();
+export default app;
