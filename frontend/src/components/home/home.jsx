@@ -2,8 +2,14 @@ import Navbar from "../navbar/navbar.jsx";
 import Footer from "../footer/footer.jsx";
 import "./home.css";
 import imagetodo from "../../../public/imagetodo-removebg-preview.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = "./login";
+    navigate(path);
+  };
   return (
     <>
       <Navbar />
@@ -19,7 +25,9 @@ const Home = () => {
         </div>
 
         <div className="start_to_do">
-          <button className="button_start_to_do">Start To Do!</button>
+          <button className="button_start_to_do" onClick={routeChange}>
+            Start To Do!
+          </button>
         </div>
       </div>
       <Footer />

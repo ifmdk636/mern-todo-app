@@ -3,7 +3,7 @@ import "./todo.css";
 import Navbar from "../navbar/navbar.jsx";
 import Footer from "../footer/footer.jsx";
 import Todocard from "../todo/todocard.jsx";
-import Update from "../todo/Update.jsx";
+import Update from "../todo/update.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
