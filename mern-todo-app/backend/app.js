@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: "http://localhost:5173/", // Allow only requests from this origin
+  origin: "https://ifmdk636-mern-todo-7kix5pbdg-ifmdk636s-projects.vercel.app/", // Allow only requests from this origin
   methods: "GET,POST,PUT", // Allow only these methods
   allowedHeaders: ["Content-Type", "Authorization"], // Allow only these headers
 };
