@@ -26,49 +26,58 @@ This project demonstrates the implementation of a RESTful API and complete CRUD 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React.js
-- CSS and Tailwind CSS *(adjust based on your project)*
+- CSS and Tailwind CSS _(adjust based on your project)_
 - Axios
 
 ### Backend
+
 - Node.js
 - Express.js
 
 ### Database
+
 - MongoDB
 - Mongoose
 
 ---
 
+## Login User Dummy
+
+username = admin@gmail.com
+password = admin123
+
 ## 📁 Project Structure
 
 mern-todo-app/
 │
-├── client/                 # React Frontend
-│   ├── src/
-│   └── public/
+├── client/ # React Frontend
+│ ├── src/
+│ └── public/
 │
-├── server/                 # Express Backend
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── server.js
+├── server/ # Express Backend
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ └── server.js
 │
 ├── .env
 ├── package.json
 └── README.md
 
 ⚙️ Installation & Setup
+
 1. Clone the Repository
-git clone https://github.com/your-username/mern-todo-app.git
-cd mern-todo-app
+   git clone https://github.com/your-username/mern-todo-app.git
+   cd mern-todo-app
 2. Install Dependencies
-Install Backend Dependencies
-cd server
-npm install
-Install Frontend Dependencies
-cd ../client
-npm install
+   Install Backend Dependencies
+   cd server
+   npm install
+   Install Frontend Dependencies
+   cd ../client
+   npm install
 3. Configure Environment Variables
 
 Create a .env file inside the server folder and add:
