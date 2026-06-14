@@ -7,7 +7,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { authActions } from "../../store/index.js";
-// import "./signin.css";
+import "./signin.css";
 
 const Signin = () => {
   const navigate = useNavigate();
@@ -101,6 +101,12 @@ const Signin = () => {
 
               <button className="btn btn-primary mt-3">Sign In</button>
             </form>
+            <div className="text-center mt-1">
+              <p className="mb-1">Don't Have an Account Yet?</p>
+              <a href="/register" className="text-primary">
+                Register
+              </a>
+            </div>
           </div>
         </div>
       </div>

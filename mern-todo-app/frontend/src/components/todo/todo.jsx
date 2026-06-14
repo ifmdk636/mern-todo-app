@@ -7,6 +7,10 @@ import Update from "../todo/update.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+// import dotenv from "dotenv";
+
+// dotenv.config({ path: "../../../.env" });
+// const DELETE_URL=process.env.
 
 const Todo = () => {
   const [inputs, setInputs] = useState({ title: "", body: "" });

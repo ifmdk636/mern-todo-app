@@ -37,7 +37,7 @@ const Signup = () => {
     <>
       <Navbar />
       <div className="signup">
-        <div className="signin-container">
+        <div className="signup-container">
           <h1 className="signin-title fs-1">Sign Up</h1>
           <img className="imagetodo-signup" alt="todo" src={imagetodo} />
 
@@ -69,8 +69,14 @@ const Signup = () => {
               onChange={handleChange}
             />
 
-            <button type="submit">Sign Up</button>
+            <button className="btn btn-primary mt-3">Sign Up</button>
           </form>
+          <div className="text-center mt-1">
+            <p className="mb-1">Have an account?</p>
+            <a href="/login" className="text-primary">
+              Login
+            </a>
+          </div>
         </div>
       </div>
       <Footer />
