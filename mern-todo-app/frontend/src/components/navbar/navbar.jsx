@@ -6,13 +6,16 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { authActions } from "../../store/index.js";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const isLoggedIn = useSelector((state) => state.isLoggedIn);
   const dispatch = useDispatch();
   const logout = () => {
-    sessionStorage.clear("id");
+    sessionStorage.clear();
     dispatch(authActions.logout());
+
+    window.location.href = "/login";
   };
 
   return (

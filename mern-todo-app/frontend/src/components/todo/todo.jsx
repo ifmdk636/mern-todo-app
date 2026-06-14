@@ -72,23 +72,21 @@ const Todo = () => {
       toast("Title atau Body tidak boleh kosong");
       return;
     }
-    if (!id) {
-      toast("User belum login");
-      return;
-    }
-    try {
-      const response = await axios.post("http://localhost:1000/addlist", {
-        title: inputs.title,
-        body: inputs.body,
-        id,
-      });
-      setTodos((prev) => [...prev, response.data.list]);
-      setInputs({ title: "", body: "" });
-      toast("Todo berhasil ditambahkan");
-    } catch (error) {
-      console.error(error);
-      toast("Gagal menambahkan todo");
-    }
+
+    const newTodo = {
+      _id: Date.now().toString(),
+      title: inputs.title,
+      body: inputs.body,
+    };
+
+    setTodos((prev) => [...prev, newTodo]);
+
+    setInputs({
+      title: "",
+      body: "",
+    });
+
+    toast.success("Todo berhasil ditambahkan");
   };
 
   // menampilkan todo

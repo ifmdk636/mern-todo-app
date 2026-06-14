@@ -41,7 +41,7 @@ const Signup = () => {
           <h1 className="signin-title fs-1">Sign Up</h1>
           <img className="imagetodo-signup" alt="todo" src={imagetodo} />
 
-          <form onSubmit={handleSubmit} className="d-flex flex-column w-00 p-5">
+          <form onSubmit={handleSubmit} className="d-flex flex-column w-50 p-5">
             <input
               className="p-2 my-3 input-signup"
               type="email"

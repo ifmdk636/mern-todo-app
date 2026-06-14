@@ -35,7 +35,19 @@ const Signin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Hardcode Login User
+    if (
+      formData.email === "admin@gmail.com" &&
+      formData.password === "admin123"
+    ) {
+      sessionStorage.setItem("id", "1");
 
+      dispatch(authActions.login());
+
+      navigate("/todo");
+    } else {
+      alert("Email atau password salah");
+    }
     try {
       const response = await axios.post(
         "http://localhost:1000/login",
