@@ -58,7 +58,7 @@ const Navbar = () => {
                     <a
                       className="nav-link active"
                       aria-current="page"
-                      href="/sign-up"
+                      href="/register"
                     >
                       Sign Up
                     </a>
